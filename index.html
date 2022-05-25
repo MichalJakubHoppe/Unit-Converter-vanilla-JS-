@@ -1,0 +1,22 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="main-container">
+            <div class="input-section">
+                <h1>Metric Imperial Unit Converter</h1>
+                <input type="number" placeholder="0" id="input-value" oninput="convertLength();convertVolume();convertMass()"/ min="1" max="100">
+            </div>
+            <div class="display-section">
+                <h3>Length (Meter/Feet)</h3>
+                <p class="display-text"><span id="m2f">0</span> meters = <span id="m2f-result">0</span> feet ||<span id="f2m">0</span> feet = <span id="f2m-result">6.096</span> meter</p>
+                <h3>Volume (Liters/Gallons)</h3>
+                <p class="display-text"><span id="l2g">0</span> liters = <span id="l2g-result">65</span> gallons ||<span id="g2l">0</span> gallons = <span id="g2l-result">6.096</span> liters</p>
+                <h3>Mass (Kilograms/Pounds)</h3>
+                <p class="display-text"><span id="k2p">0</span> Kilograms = <span id="k2p-result">65</span> Pounds ||<span id="p2k">0</span> Pounds = <span id="p2k-result">6.096</span> Kilograms</p>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
